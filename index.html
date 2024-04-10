@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>Andrew Lofgren CSCE </title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Andrew Lofgren</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+<div class="wrapper">
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img src="assets/images/unl.jpg" alt="top-image" loading="lazy" class="hero-img">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Hi there! My name is Andrew Lofgren. I'm a Senior Computer Science Major at UNL and will be graduating in December of 2023. Welcome to my website!
+            </p>
+        </div>
+    </section>
+
+    <!-- More About -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            I was born and raised here in Lincoln, Nebraska, but my family is from a bunch of different small towns of Nebraska.
+        </p>
+        <p>
+            I started progamming in a high school course where we were taught python, and I really enjoyed it. I initially studied engineering before switching to computer science full time and I've really enjoyed it.
+        </p>
+        <p>
+            Another big interest in my life is baseball. I played it all my life and recently began coaching as well. The sport itself is very entertaining to me, but we really interests me these days is the analytics behind it. There are lots of things being done in that area and it's a huge interest of mine and works as a seamless connection between my professional and personal intersts.
+        </p>
+    </section>
+    <!-- Skills Section  -->
+    <section class="skills" id="skills">
+        <h2 class="skills-header">Some of My Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/images/html.png" alt="" loading="lazy" class="icon icon-card"/>
+                <img src="assets/images/css.png" alt="" loading="lazy" class="icon icon-card"/>
+                <img src="assets/images/javascript.jpg" alt="" loading="lazy" class="icon icon-card"/>
+            </div>
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/images/python.png" alt="" loading="lazy" class="icon icon-card"/>
+                <img src="assets/images/java.png" alt="" loading="lazy" class="icon icon-card"/>
+                <img src="assets/images/cpp.png" alt="" loading="lazy" class="icon icon-card"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Past Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/contiProj.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Lab Sheet Generator</h3>
+                <p class="project-details">
+                    For my internship at ContiTech, I made a small application to automate the generation of weigh up sheets for the lab guys which was previously done manually.
+                </p>
+                <a href="https://github.com/alofgren7/Continental-Batch-Writer" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/e-commerce.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">E-Commerce Site</h3>
+                <p class="project-details">
+                    This project was an e-commerce website made for the group project of CSCE361 - Software Engineering. It utilized SQL, C#, and ReactJS.
+                </p>
+                <a href="https://github.com/Group2-CSCE361/E-Commerce-Final-Project" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/portfolioProj.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-details">
+                    This project is a personal portfolio website for CSCE 464. As you can probably tell, it's literally this site your on. However, the github is linked below.
+                </p>
+                <a href="https://github.com/alofgren7/personalPortfolio" target="_blank" class="project-link">Link to Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/{form_id}" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required/>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required/>
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" name="message" placeholder="Enter Your Message" class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Social Accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/andrew_lofgren4" target="_blank">
+            <img src="assets/images/twitter.jpg" alt="Twitter" loading="lazy" class="socicon">
+        </a>
+        <a href="https://www.instagram.com/andrewlofgren4/" target="_blank">
+            <img src="assets/images/intagram.png" alt="Instagram" loading="lazy" class="socicon">
+        </a>
+        <a href="https://www.linkedin.com/in/andrew-lofgren-b6b371268/" target="_blank">
+            <img src="assets/images/linkedin.png" alt="Linkedin" loading="lazy" class="socicon">
+        </a>
+        <a href="https://github.com/alofgren7/" target="_blank">
+            <img src="assets/images/github.png" alt="Github" loading="lazy" class="socicon">
+        </a>
+    </div>
+    
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up">
+        <img src="assets/images/backToTop.jpg" class="socicon up-arrow" alt="scroll-up"/>
+    </i>
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="copy">
+            Built by Andrew Lofgren
+        </p>
+        <p>
+            Email: alofgren7@huskers.unl.edu
+        </p>
+    </footer>
+
+    <!-- Website Scripts -->
+    <script src="scripts/app.js"></script>
+
+    <!-- Ion Icons Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
