@@ -1,4 +1,3 @@
-/* Variables */
 :root{
     --font-family: sans-serif;
     --normal-font: 400;
@@ -14,7 +13,7 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
 }
-/* Variables End */
+
 
 html{
     scroll-behavior: smooth;
@@ -98,9 +97,8 @@ nav ul li {
 }
 
 .hero img {
-    height:37.5rem;
-    width:37.5rem;
-    
+    width: 37.5rem;
+    height: 37.5rem;
 }
 
 .bio {
@@ -112,6 +110,10 @@ nav ul li {
 
 .bio h1 {
     margin-bottom: var(--bottom-margin);
+}
+
+.bio-title {
+    text-align: center;
 }
 
 .bio-text {
@@ -395,7 +397,6 @@ footer {
     }
     
     .bio {
-        padding-left: 50px;
         width: 18.3rem;
     }
 

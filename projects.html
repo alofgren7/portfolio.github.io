@@ -17,7 +17,7 @@
     <nav>
         <h1>Andrew Lofgren</h1>
         <ul class="navigation">
-            <li><a href="index.html" class="nav-link">Home</a></li>
+            <il><a href="index.html" class="nav-link">Home</a></il>
             <li><a href="about.html" class="nav-link">About</a></li>
             <li><a href="skills.html" class="nav-link">Skills</a></li>
             <li><a href="projects.html" class="nav-link">Projects</a></li>
@@ -29,54 +29,19 @@
         </button>
     </nav>
 <div class="wrapper">
-    <!-- Hero  -->
+
+    <br><br>
     <section class="hero" id="about">
-        <div class="hero-img">
-            <img src="assets/images/neb.png" alt="top-image" loading="lazy">
-        </div>
-        
         <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
+            <h2 class="bio-title">My Projects</h2>
             <p class="bio-text">
-                Hi there! My name is Andrew Lofgren. I'm a Senior Computer Science Major at UNL and will be graduating in December of 2024. Welcome to my website!
+                Below is a list of the many projects I've done over the years. Click any of them to view the repository in another tab!
             </p>
-        </div>
-    </section>
-
-    <!-- More About -->
-    <section class="more-about">
-        <h2><a href="about.html">More About Me</a></h2>
-        <p>
-            I was born and raised here in Lincoln, Nebraska, but my family is from a bunch of different small towns of Nebraska.
-        </p>
-        <p>
-            I started progamming in a high school course where we were taught python, and I really enjoyed it. I initially studied engineering before switching to computer science full time and I've really enjoyed it.
-        </p>
-        <p>
-            Another big interest in my life is baseball. I played it all my life and recently began coaching as well. The sport itself is very entertaining to me, but we really interests me these days is the analytics behind it. There are lots of things being done in that area and it's a huge interest of mine and works as a seamless connection between my professional and personal intersts.
-        </p>
-    </section>
-    <!-- Skills   -->
-    <section class="skills" id="skills">
-        <h2 class="skills-header"><a href="skills.html">Some of My Skills</a></h2>
-
-        <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-                <img src="assets/images/html.png" alt="" loading="lazy" class="icon icon-card"/>
-                <img src="assets/images/css.png" alt="" loading="lazy" class="icon icon-card"/>
-                <img src="assets/images/javascript.jpg" alt="" loading="lazy" class="icon icon-card"/>
-            </div>
-            <div class="second-set animate__animated animate__pulse">
-                <img src="assets/images/python.png" alt="" loading="lazy" class="icon icon-card"/>
-                <img src="assets/images/java.png" alt="" loading="lazy" class="icon icon-card"/>
-                <img src="assets/images/cpp.png" alt="" loading="lazy" class="icon icon-card"/>
-            </div>
         </div>
     </section>
 
     <!-- Projects  -->
     <section class="projects" id="projects">
-        <h2 class="projects-title"><a href="projects.html">Past Projects</a></h2>
         <div class="projects-container">
             <div class="project-container project-card">
                 <img src="assets/images/contiProj.png" alt="" loading="lazy" class="project-pic"/>
@@ -103,31 +68,60 @@
                 <a href="https://github.com/alofgren7/personalPortfolio" target="_blank" class="project-link">Link to Project</a>
             </div>
         </div>
-    </section>
-
-    <!-- Contact  -->
-    <section class="contact" id="contact">
-        <h2><a href="contact.html">Contact Me</a></h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="mailto:alofgren7@huskers.unl.edu" method="POST">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required/>
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required/>
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" name="message" placeholder="Enter Your Message" class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/nebraskaMedicine.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Nebraska Medicine: Identify, Isolate, and Inform VR Training</h3>
+                <p class="project-details">
+                    My senior design project has been creating a virtual reality training for Nebraska Medicine to educate medical professionals on the processes of dealing with infectious diseases.
+                </p>
+                <a href="https://nebraskamed.com" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/cShell.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Functional Unix C-Shell</h3>
+                <p class="project-details">
+                    For my Operating Systems course, we were to construct a working C-Shell on the Unix servers. It has logical and piping functionality.
+                </p>
+                <a href="https://github.com/Group2-CSCE361/Unix-C-Shell" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/gameOfLife.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Conway's Game of Life</h3>
+                <p class="project-details">
+                    This is a python, shell based version on Conway's game of life that I created in a high school course.
+                </p>
+                <a href="https://github.com/alofgren7/GameOfLife" target="_blank" class="project-link">Link to Project</a>
+            </div>
+        </div>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/rangeFinder.jpg" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Arduino Range Finder</h3>
+                <p class="project-details">
+                    For my final project of Computer Systems Engineering, we were to write a program to create a working range finder using a motion detector, alarm bell, and arduino nano.
+                </p>
+                <a href= "https://github.com/alofgren7/ALWest2023" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/mlb.jpg" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">MLB Statistical Analysis</h3>
+                <p class="project-details">
+                    As a side project, I made use a python library called pybaseball to scrape MLB statistics websites and did some data analysis with the data in a jupyter notebook.
+                </p>
+                <a href="https://github.com/Group2-CSCE361/Unix-C-Shell" target="_blank" class="project-link">Link to Project</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="assets/images/clutchHitting.png" alt="" loading="lazy" class="project-pic"/>
+                <h3 class="project-title">Clutch Hitting Tracket</h3>
+                <p class="project-details">
+                    I'm the head coach of a high school baseball team and one of my biggest things is tracking all kinds of data. This web app allows me to track the teams clutch hitting.
+                </p>
+                <a href="https://github.com/alofgren7/clutchHitting.github.io" target="_blank" class="project-link">Link to Project</a>
             </div>
         </div>
     </section>
+
 </div>
     <!-- Social  - Fixed to the right -->
     <div class="socials">
