@@ -1,8 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Selected software, data, and interactive projects by Andrew Lofgren."><link rel="stylesheet" href="assets/css/style.css"><title>Projects | Andrew Lofgren</title></head>
-<body>
-<nav aria-label="Primary navigation"><h1>Andrew Lofgren</h1><ul class="navigation"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="skills.html" class="nav-link">Skills</a></li><li><a href="projects.html" class="nav-link">Projects</a></li><li><a href="contact.html" class="nav-link">Contact</a></li><li><a href="files/resume.pdf" target="_blank" rel="noreferrer" class="nav-link">Resume</a></li></ul><button class="burger-menu" id="burger-menu" aria-label="Open navigation" aria-expanded="false">+</button></nav>
-<main class="page-shell projects-page"><header class="page-intro"><p class="eyebrow">Selected work / 01</p><h2 class="page-title">Projects with a point of view.</h2><p>A collection of coursework, client-facing work, experiments, and tools built around real questions.</p></header><div class="project-grid"><article class="project-card"><img class="project-pic" src="assets/images/nebraskaMedicine.png" alt="Nebraska Medicine VR training project"><div class="project-content"><p class="project-kicker">Unity / C# / senior design</p><h3 class="project-title">Identify, Isolate, and Inform</h3><p class="project-details">A virtual reality training experience for Nebraska Medicine, created to give healthcare professionals a memorable way to practice infectious-disease protocols.</p><a class="project-link" href="https://nebraskamed.com" target="_blank" rel="noreferrer">Visit Nebraska Medicine ↗</a></div></article><article class="project-card"><img class="project-pic" src="assets/images/contiProj.png" alt="Lab sheet generator project"><div class="project-content"><p class="project-kicker">Automation / internship</p><h3 class="project-title">Lab Sheet Generator</h3><p class="project-details">A small application made during my ContiTech internship to automate the generation of lab weigh-up sheets and reduce manual work.</p><a class="project-link" href="https://github.com/alofgren7/Continental-Batch-Writer" target="_blank" rel="noreferrer">View repository ↗</a></div></article><article class="project-card"><img class="project-pic" src="assets/images/e-commerce.png" alt="E-commerce site project"><div class="project-content"><p class="project-kicker">React / C# / SQL</p><h3 class="project-title">E-Commerce Site</h3><p class="project-details">A collaborative software engineering project with product browsing, data persistence, and a full purchase flow.</p><a class="project-link" href="https://github.com/Group2-CSCE361/E-Commerce-Final-Project" target="_blank" rel="noreferrer">View repository ↗</a></div></article><article class="project-card"><img class="project-pic" src="assets/images/mlb.jpg" alt="Baseball analytics project"><div class="project-content"><p class="project-kicker">Python / data analysis</p><h3 class="project-title">MLB Statistical Analysis</h3><p class="project-details">A notebook-based exploration of MLB data using pybaseball, focused on finding patterns in team and player performance.</p><a class="project-link" href="https://github.com/alofgren7/ALWest2023" target="_blank" rel="noreferrer">View repository ↗</a></div></article><article class="project-card"><img class="project-pic" src="assets/images/rangeFinder.jpg" alt="Arduino range finder project"><div class="project-content"><p class="project-kicker">Arduino / embedded systems</p><h3 class="project-title">Arduino Range Finder</h3><p class="project-details">A sensor-based range finder combining a motion detector, alarm, and Arduino Nano into a compact system.</p><a class="project-link" href="https://github.com/alofgren7/RangeFinder" target="_blank" rel="noreferrer">View repository ↗</a></div></article></div></main>
-<div class="socials" aria-label="Social links"><a href="https://github.com/alofgren7/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a><a href="https://www.linkedin.com/in/andrew-lofgren-b6b371268/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a></div><i class="scroll-up" id="scroll-up" role="button" aria-label="Scroll to top"></i><footer><p>Built by Andrew Lofgren</p><p><a href="mailto:andrew.lofgren164@gmail.com">Email me ↗</a></p></footer><script src="scripts/app.js"></script>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selected software, data, and interactive projects by Andrew Lofgren."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Projects | Andrew Lofgren</title>
+  </head>
+  <body>
+    <nav aria-label="Primary navigation">
+      <h1>Andrew Lofgren</h1>
+      <ul class="navigation">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <a
+            href="files/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            class="nav-link"
+            >Resume</a
+          >
+        </li>
+      </ul>
+      <button
+        class="burger-menu"
+        id="burger-menu"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        +
+      </button>
+    </nav>
+    <main class="page-shell projects-page">
+      <header class="page-intro">
+        <p class="eyebrow">Selected work / 01</p>
+        <h2 class="page-title">Projects with a point of view.</h2>
+        <p>
+          A collection of coursework, client-facing work, experiments, and tools
+          built around real questions.
+        </p>
+      </header>
+      <div class="project-grid">
+        <article class="project-card">
+          <img
+            class="project-pic"
+            src="assets/images/nebraskaMedicine.png"
+            alt="Nebraska Medicine VR training project"
+          />
+          <div class="project-content">
+            <p class="project-kicker">Unity / C# / senior design</p>
+            <h3 class="project-title">Identify, Isolate, and Inform</h3>
+            <p class="project-details">
+              A virtual reality training experience for Nebraska Medicine,
+              created to give healthcare professionals a memorable way to
+              practice infectious-disease protocols.
+            </p>
+            <a
+              class="project-link"
+              href="https://nebraskamed.com"
+              target="_blank"
+              rel="noreferrer"
+              >Visit Nebraska Medicine ↗</a
+            >
+          </div>
+        </article>
+        <article class="project-card">
+          <img
+            class="project-pic"
+            src="assets/images/contiProj.png"
+            alt="Lab sheet generator project"
+          />
+          <div class="project-content">
+            <p class="project-kicker">Automation / internship</p>
+            <h3 class="project-title">Lab Sheet Generator</h3>
+            <p class="project-details">
+              A small application made during my ContiTech internship to
+              automate the generation of lab weigh-up sheets and reduce manual
+              work.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/alofgren7/Continental-Batch-Writer"
+              target="_blank"
+              rel="noreferrer"
+              >View repository ↗</a
+            >
+          </div>
+        </article>
+        <article class="project-card">
+          <img
+            class="project-pic"
+            src="assets/images/e-commerce.png"
+            alt="E-commerce site project"
+          />
+          <div class="project-content">
+            <p class="project-kicker">React / C# / SQL</p>
+            <h3 class="project-title">E-Commerce Site</h3>
+            <p class="project-details">
+              A collaborative software engineering project with product
+              browsing, data persistence, and a full purchase flow.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/Group2-CSCE361/E-Commerce-Final-Project"
+              target="_blank"
+              rel="noreferrer"
+              >View repository ↗</a
+            >
+          </div>
+        </article>
+        <article class="project-card">
+          <img
+            class="project-pic"
+            src="assets/images/mlb.jpg"
+            alt="Baseball analytics project"
+          />
+          <div class="project-content">
+            <p class="project-kicker">Python / data analysis</p>
+            <h3 class="project-title">MLB Statistical Analysis</h3>
+            <p class="project-details">
+              A notebook-based exploration of MLB data using pybaseball, focused
+              on finding patterns in team and player performance.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/alofgren7/ALWest2023"
+              target="_blank"
+              rel="noreferrer"
+              >View repository ↗</a
+            >
+          </div>
+        </article>
+        <article class="project-card">
+          <img
+            class="project-pic"
+            src="assets/images/rangeFinder.jpg"
+            alt="Arduino range finder project"
+          />
+          <div class="project-content">
+            <p class="project-kicker">Arduino / embedded systems</p>
+            <h3 class="project-title">Arduino Range Finder</h3>
+            <p class="project-details">
+              A sensor-based range finder combining a motion detector, alarm,
+              and Arduino Nano into a compact system.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/alofgren7/RangeFinder"
+              target="_blank"
+              rel="noreferrer"
+              >View repository ↗</a
+            >
+          </div>
+        </article>
+      </div>
+    </main>
+    <div class="socials" aria-label="Social links">
+      <a
+        href="https://github.com/alofgren7/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+        >GH</a
+      ><a
+        href="https://www.linkedin.com/in/andrew-lofgren-b6b371268/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn"
+        >in</a
+      >
+    </div>
+    <i
+      class="scroll-up"
+      id="scroll-up"
+      role="button"
+      aria-label="Scroll to top"
+    ></i>
+    <footer>
+      <p>Built by Andrew Lofgren</p>
+      <p><a href="mailto:andrew.lofgren164@gmail.com">Email me ↗</a></p>
+    </footer>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
