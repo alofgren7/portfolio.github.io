@@ -1,30 +1,25 @@
-// scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
-
-    scrollUp.addEventListener("click", () => {
+if (scrollUp) scrollUp.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
             left: 0,
             behavior: "smooth",
-        })
-    })
+        });
+    });
 
-// Nav hamburger selections
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+if (burger && ul) {
+    burger.addEventListener("click", () => {
+        const isOpen = ul.classList.toggle("show");
+        burger.setAttribute("aria-expanded", String(isOpen));
+    });
+    document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => ul.classList.remove("show"));
+    });
+}
 
-burger.addEventListener("click", () => {
-    ul.classList.toggle('show');
-})
-
-// Close Hamburger menu when a link is clicked
-
-// Select nav links
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach((link) => {
-    link.addEventListener("click", () => {
-        ul.classList.remove('show');
-    })
-})
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.getAttribute("href") === currentPage) link.classList.add("active");
+});
